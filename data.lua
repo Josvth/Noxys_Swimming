@@ -34,12 +34,12 @@ end
 
 -- Speed
 for _,water in pairs{"water", "water-green"} do
-	data.raw.tile[water].vehicle_friction_modifier = 6 / speed
+	-- data.raw.tile[water].vehicle_friction_modifier = 6 / speed
 	data.raw.tile[water].walking_speed_modifier    = speed
 end
 if is_deep_swimmable then
 	for _,water in pairs{"deepwater", "deepwater-green"} do
-		data.raw.tile[water].vehicle_friction_modifier = 6 / deepspeed
+		-- data.raw.tile[water].vehicle_friction_modifier = 6 / deepspeed
 		data.raw.tile[water].walking_speed_modifier    = deepspeed
 	end
 end
